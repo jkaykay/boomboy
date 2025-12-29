@@ -6,6 +6,8 @@ An endless runner browser game built with Phaser.js where you control Boomboy, a
 
 **⚠️ Important**: This game requires a web server to run properly due to Phaser.js CORS restrictions and ES6 module loading. You cannot simply open `index.html` directly in your browser.
 
+**⚠️ Important #2**: This game only functions if your monitor/frame rate is set to 60hz/60fps.
+
 ### Option 1: Local Development Server
 
 Choose one of these methods to run a local server:
