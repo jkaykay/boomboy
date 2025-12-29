@@ -1,0 +1,134 @@
+{
+    "frames": {
+        "cloud04": {
+            "frame": {
+                "x": 0,
+                "y": 83,
+                "w": 60,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 60,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 60,
+                "h": 35
+            }
+        },
+        "cloud05": {
+            "frame": {
+                "x": 42,
+                "y": 25,
+                "w": 30,
+                "h": 20
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 30,
+                "h": 20
+            },
+            "sourceSize": {
+                "w": 30,
+                "h": 20
+            }
+        },
+        "cloud00": {
+            "frame": {
+                "x": 0,
+                "y": 29,
+                "w": 34,
+                "h": 23
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 34,
+                "h": 23
+            },
+            "sourceSize": {
+                "w": 34,
+                "h": 23
+            }
+        },
+        "cloud01": {
+            "frame": {
+                "x": 0,
+                "y": 53,
+                "w": 50,
+                "h": 29
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 50,
+                "h": 29
+            },
+            "sourceSize": {
+                "w": 50,
+                "h": 29
+            }
+        },
+        "cloud02": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 41,
+                "h": 28
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 41,
+                "h": 28
+            },
+            "sourceSize": {
+                "w": 41,
+                "h": 28
+            }
+        },
+        "cloud03": {
+            "frame": {
+                "x": 42,
+                "y": 0,
+                "w": 31,
+                "h": 24
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 31,
+                "h": 24
+            },
+            "sourceSize": {
+                "w": 31,
+                "h": 24
+            }
+        }
+    },
+    "meta": {
+        "app": "https://www.leshylabs.com/apps/sstool/",
+        "version": "Leshy SpriteSheet Tool v0.8.4",
+        "image": "cloud.png",
+        "size": {
+            "w": 73,
+            "h": 118
+        },
+        "scale": 1
+    }
+}

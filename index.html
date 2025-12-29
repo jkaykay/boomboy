@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boomboy - Home</title>
+    <meta name="author" content="Jay Yang">
+
+    <!-- CSS Links-->
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+
+    <!-- Script Links-->
+    <script src="scripts/validate.js" type="module"></script>
+
+    <!--Icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+
+    <!-- Web Font Links-->
+    <!-- Font: Outfit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!--Font: Nanum Gothic-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div id="mainBoundary"> <!--Main Content Goes In This DIV-->
+      <div class="hfBox" style="border-top: none"> <!--DIV Specific to Header + Footer-->
+        <header>
+          <div id="heade">
+
+            <!--Header Section 1: The Logo-->
+            <div id="mainLogoBox">
+              <div id="logoBox">
+
+                <!--Box for Logo Image-->
+                <a title="Home" href="index.html" style="text-decoration: none;">
+                  <!--IMG Link to Home-->
+                  <img alt="Boomboy Logo" src="images/boomboylogo.png" class="iconstyle">
+                </a>
+
+              </div>
+            </div>
+
+            <!--Header Section 2: The Base Text-->
+            <div id="headerText">
+              <!--Text Link to Home-->
+              <a title="Home" href="index.html" id="bannertext" style="text-decoration: none;">Boomboy</a>
+              <p id="bannerText2">An Endless Runner by Jay</p>
+            </div>
+
+            <!--clear floats-->
+            <div class="clear"></div>
+          </div>
+        </header>
+      </div>
+
+      <main>
+        <div id="mainbox">
+          <!--A Base Boundary Div-->
+          <div id="infoBox">
+
+            <!-- Main DIV for INFO-->
+            <nav>
+              <div id="navi">
+                <!--Super Rudimentary Styling By adding Divs :) -->
+                <div class="menuDeco2"></div>
+                <div class="menuDeco"></div>
+
+                <a title="Home Page Link" href="index.html" class="menulinks"><p class="menuText">Home</p></a>
+
+                <a title="Play" href="html/playgame.html" class="menulinks"><p class="menuText">Play</p></a>
+
+                <a title="Register or Login" href="html/reglog.html" id="dynamicButton" class="menulinks"><p class="menuText">Register/Login</p></a>
+
+                <a title="Leaderboard" href="html/leaderboard.html" class="menulinks"><p class="menuText">Leaderboard</p></a>
+
+                <div class="menuDeco"></div>
+                <div class="menuDeco2"></div>
+              </div>
+            </nav>
+
+            <div class="subheadings">
+              <p class="subheader">Welcome!</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="slideshowz">
+              <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides">
+                  <div class="numbertext">1 / 3</div>
+                  <img alt="Promotional Image 1" src="images/pic1.png" class="slideImgs">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <img alt="Promotional Image 2" src="images/pic2.png" class="slideImgs">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 3</div>
+                  <img alt="Promotional Image 3" src="images/pic3.png" class="slideImgs">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <div class="slideButtons">
+                  <a class="prev" onclick="scrollSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="scrollSlides(1)">&#10095;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="subheadings">
+              <p class="subheader3">Survive as long as you can!</p>
+            </div>
+
+            <div class="para">
+              <p class="passage">Boomboy is an endless runner where you can jump, slide, and shoot to dodge and take care
+                of obstacles in your path.</p>
+              <p class="passage">You'll encounter poison frogs, faceless monkeys, blood ravens, and zombie wolves!</p>
+              <p class="passage">Your score will increase as long as your don't lose all of your health.</p>
+              <p class="passage">&nbsp;</p>
+              <p class="passage">Rack up those points and show your friends how far you can go in this endless runner.</p>
+              <p class="passage">Shoot and dodge your way through! Make sure to login so you can play.</p>
+            </div>
+
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <a title="Home" href="index.html" style="text-decoration: none;">
+        <div class="hfBox" style="border-bottom:0;">
+          <!--Footer box-->
+          <footer>
+            <p id="footnote">Jay Yang &copy; 2025</p>
+          </footer>
+        </div>
+      </a>
+    </div>
+
+
+    <!--Scripts -->
+    <script>
+      let slideIndex = 1; // Initialize to 1
+      showSlides(slideIndex); //Call here once to show first image upon every load
+
+      // Next/previous controls (Calls showSlides to hide other slides and display only the active one)
+      function scrollSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        // Whenever user scrolls past LAST image, n is > 3. So loop back to 1.
+        if (n > slides.length) { slideIndex = 1 }
+
+        //Whenever user scrolls back while on FIRST image, loop back to last image. 
+        if (n < 1) { slideIndex = slides.length }
+        // Else n is just n (1, 2, or 3)
+
+        // Set all children to invisible
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        // Set the selected child to visible (-1 because indexing starts at 0)
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+
+</html>

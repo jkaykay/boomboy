@@ -1,0 +1,131 @@
+/*--------------- MAIN GAME CONTAINER ------------------*/
+#gameboy {
+    box-sizing: border-box;
+    width: 70%;
+    aspect-ratio: 683 / 384;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 3px 3px 3px #FFC482;
+}
+
+/*--------------- "FORM" STYLE ------------------*/
+#formBox {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 1px solid #A83113;
+    border-radius: 8px 8px 8px 8px;
+    width: 70%;
+    margin: 10px auto;
+}
+
+
+#regiBox {
+    display:block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-right: 1px solid #A83113;
+}
+
+#registerForm {
+    width: 80%;
+    margin: 0 auto;
+}
+#loginBox {
+    display:block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.formLabels {
+    font-family: "Outfit", sans-serif;
+    font-size: 125%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2B3A67;
+}
+
+.inputBoxes{
+    font-family: "Outfit", sans-serif;
+    font-size: 125%;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formSubmits {
+    font-size: 125%;
+    font-family: "Outfit", sans-serif;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #A83113;
+    color:#2B3A67;
+    background: #FFC482;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.formSubmits:hover{
+    border: 1px solid #FFFBEA;
+    color:#FFFBEA;
+    background: #A83113;
+    cursor:pointer;
+}
+
+
+#reg-error-msg {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 110%;
+    color: red;
+}
+
+#log-error-msg {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 110%;
+    color: red;
+}
+
+/*------------LEADERBOARD STYLE----------------*/
+#leaderboard {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 15px auto;
+}
+
+#scoreTable {
+    width: 80%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#scoreTable th{
+    background-color: #66999B;
+    box-sizing: border-box;
+    border: 1px solid #2B3A67;
+}
+.othertwo {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 120%;
+    width: 40%;
+    color: #2B3A67;
+}
+
+.column1 {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 120%;
+    width: 10%;
+    color: #2B3A67;
+}
+
+#scoreTable td{
+    background-color: #FFFBEA;
+    box-sizing: border-box;
+    border: 1px solid #66999B;
+}

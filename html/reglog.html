@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Boomboy - Register or Login</title>
+    <meta name="author" content="Jay Yang" >
+
+
+    <!--CSS Links-->
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css" >
+    <link rel="stylesheet" type="text/css" href="../styles/other.css" >
+
+    <!--Script Links-->
+    <script src="../scripts/validate.js" type="module"></script>
+
+    <!--Icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ico/favicon-16x16.png">
+
+    <!--Web Font Links-->
+    <!--Font: Outfit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!--Font: Nanum Gothic-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div id="mainBoundary"> <!--Main Content Goes In This DIV-->
+      <div class="hfBox" style="border-top: none"> <!--DIV Specific to Header + Footer-->
+        <header>
+          <div id="heade">
+
+            <!--Header Section 1: The Logo-->
+            <div id="mainLogoBox">
+              <div id="logoBox">
+
+                <!--Box for Logo Image-->
+                <a title="Home" href="" style="text-decoration: none;">
+                  <!--IMG Link to Home-->
+                  <img alt="Boomboy Logo" src="../images/boomboylogo.png" class="iconstyle" >
+                </a>
+
+              </div>
+            </div>
+
+            <!--Header Section 2: The Base Text-->
+            <div id="headerText">
+              <!--Text Link to Home-->
+              <a title="Home" href="" id="bannertext" style="text-decoration: none;">Boomboy</a>
+              <p id="bannerText2">An Endless Runner by Jay</p>
+            </div>
+
+            <div class="clear"></div>
+          </div>
+        </header>
+      </div>
+
+      <main>
+        <div id="mainbox">
+          <!--A Base Boundary Div-->
+          <div id="infoBox">
+            <!-- Main DIV for INFO-->
+            <nav>
+              <div id="navi">
+                <!--Super Rudimentary Styling By adding Divs :) -->
+                <div class="menuDeco2"></div>
+                <div class="menuDeco"></div>
+
+                <a title="Home Page Link" href="../index.html" class="menulinks"><p class="menuText">Home</p></a>
+
+                <a title="Play" href="playgame.html" class="menulinks"><p class="menuText">Play</p></a>
+
+                <a title="Register or Login" href="reglog.html" id="dynamicButton" class="menulinks"><p class="menuText">Register/Login</p></a>
+
+                <a title="Leaderboard" href="leaderboard.html" class="menulinks"><p class="menuText">Leaderboard</p></a>
+
+                <div class="menuDeco"></div>
+                <div class="menuDeco2"></div>
+              </div>
+            </nav>
+
+            <div class=subheaadings><p class="subheader">Register or Login to Play!</p></div>
+            <div class="line"></div>
+
+            <div id="formBox">
+              <div id="regiBox">
+                <p class="subheader">Register an Account</p>
+                <div class="line" style="width: 80%; background: #2B3A67"></div>
+                  <div id="registerForm">
+                    <!--Username-->
+                    <!--First Name-->
+                    <label class="formLabels" for="username">Username:</label>
+                    <input name="username" type="text" id="username" class="inputBoxes" placeholder="Letters and numbers only...">
+
+
+                    <!--First Name-->
+                    <label class="formLabels" for="userFirstName">First Name:</label>
+                    <input name="userFirstName" type="text" id="userFirstName" class="inputBoxes" placeholder="John" >
+                    
+                    <!-- Surname -->
+                    <label class="formLabels" for="userSurname">Surname:</label>
+                    <input name="userSurname" type="text" id="userSurname" class="inputBoxes" placeholder="Doe" >
+                    
+                    <!-- Email -->
+                    <label class="formLabels" for="email">Email:</label>
+                    <input name="email" type="text" id="email" class="inputBoxes" placeholder="email@domain.com">
+
+                    <!-- Password -->
+                    <label class="formLabels" for="password">Password:</label>
+                    <input name="password" type="password" id="password" class="inputBoxes" placeholder="Min. 7 Characters + 1 Number">
+                    
+                    <label class="formLabels" for="passwordcheck">Re-enter Password:</label>
+                    <input name="passwordcheck" type="password" id="passwordcheck" class="inputBoxes" >
+                    
+                    <!-- Submit Button -->
+                    <!-- Handled with event listeners in validate.js because modules :\ -->
+                    <br ><br >
+                    <input type="submit" value="Submit" id="regiSubmission" class="formSubmits">
+                  
+                    <p id="reg-error-msg"></p>
+                  </div>
+              </div>
+
+              <div id="loginBox">
+                <p class="subheader">Login</p>
+                <div class="line" style="width: 80%; background: #2B3A67"></div>
+                <div id="registerForm">
+                  
+                  <!--Username-->
+                  <!--First Name-->
+                  <label class="formLabels" for="username-login">Username:</label>
+                  <input name="username-login" type="text" id="username-login" class="inputBoxes" placeholder="Enter username..." >
+
+                  <!-- Password -->
+                  <label class="formLabels" for="password-login">Password:</label>
+                  <input name="password-login" type="password" id="password-login" class="inputBoxes" placeholder="Enter password...">
+                  
+                  <!-- Submit Button -->
+                  <!-- Handled with event listeners in validate.js because modules :\ -->
+                  <br ><br >
+                  <input type="submit" value="Submit" id="loginSubmission" class="formSubmits">
+                  <p id="log-error-msg"></p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+      <a title="Home" href="../index.html" style="text-decoration: none;">
+        <div class="hfBox" style="border-bottom: none;">
+          <!--Footer box-->
+          <footer>
+            <p id="footnote">Jay Yang &copy; 2025</p>
+          </footer>
+        </div>
+      </a>
+    </div>
+
+    
+
+  </body>
+
+</html>
